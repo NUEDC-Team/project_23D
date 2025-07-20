@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.runs/synth_1/design_1_wrapper.tcl"
+  variable script "D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/design_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,30 +78,45 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {D:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.cache/wt} [current_project]
-set_property parent.project_path {D:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.xpr} [current_project]
+set_property webtalk.parent_dir D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.cache/wt [current_project]
+set_property parent.project_path D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.cache/ip} [current_project]
+set_property ip_output_repo d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib {{D:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v}}
-add_files {{D:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.srcs/sources_1/bd/design_1/design_1.bd}}
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{d:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/design_1_ooc.xdc}}]
+add_files D:/Coding/Vivado/project/project_23H/project_2PSK_3/untitled.coe
+add_files D:/Coding/Vivado/project/project_23H/project_2PSK_3/high_pass_2.coe
+read_verilog -library xil_defaultlib D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+
+read_ip -quiet D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/sources_1/ip/fir_compiler_0/fir_compiler_0.xci
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK.gen/sources_1/ip/fir_compiler_0/constraints/fir_compiler_v7_2.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK.gen/sources_1/ip/fir_compiler_0/fir_compiler_0_ooc.xdc]
+
+read_ip -quiet D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/sources_1/ip/fir_compiler_high/fir_compiler_high.xci
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK.gen/sources_1/ip/fir_compiler_high/constraints/fir_compiler_v7_2.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK.gen/sources_1/ip/fir_compiler_high/fir_compiler_high_ooc.xdc]
+
+read_ip -quiet D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -112,14 +127,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{D:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc}}
-set_property used_in_implementation false [get_files {{D:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc}}]
+read_xdc D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc
+set_property used_in_implementation false [get_files D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {D:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.srcs/utils_1/imports/synth_1/demoduation_2PSK.dcp}
+read_checkpoint -auto_incremental -incremental D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/utils_1/imports/synth_1/demoduation_2PSK.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

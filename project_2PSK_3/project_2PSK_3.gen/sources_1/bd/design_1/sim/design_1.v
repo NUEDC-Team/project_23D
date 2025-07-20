@@ -1,17 +1,18 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Sun Jul 20 13:08:32 2025
-//Host        : LAPTOP-U2S933NI running 64-bit major release  (build 9200)
+//Date        : Sun Jul 20 15:49:02 2025
+//Host        : ChaelChael running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=2,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=4,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_clkrst_cnt=3,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
-   (DDR_addr,
+   (DAC_out_0,
+    DDR_addr,
     DDR_ba,
     DDR_cas_n,
     DDR_ck_n,
@@ -34,9 +35,12 @@ module design_1
     FIXED_IO_ps_srstb,
     adc_data_0,
     clkn_0,
+    clkn_1,
     clkp_0,
+    clkp_1,
     conv_done_0,
     signal_out_0);
+  output [13:0]DAC_out_0;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR ADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250" *) inout [14:0]DDR_addr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR BA" *) inout [2:0]DDR_ba;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddrx:1.0 DDR CAS_N" *) inout DDR_cas_n;
@@ -60,10 +64,15 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
   input [11:0]adc_data_0;
   output clkn_0;
+  output clkn_1;
   output clkp_0;
+  output clkp_1;
   output conv_done_0;
   output signal_out_0;
 
+  wire [13:0]AD9744_0_DAC_out;
+  wire AD9744_0_clkn;
+  wire AD9744_0_clkp;
   wire [15:0]ADC_LTC2220_driver_0_DATA;
   wire ADC_LTC2220_driver_0_clkn;
   wire ADC_LTC2220_driver_0_clkp;
@@ -74,6 +83,7 @@ module design_1
   wire [31:0]axi_gpio_1_gpio_io_o;
   wire [31:0]demoduation_2PSK_0_signal_in_mult_1;
   wire demoduation_2PSK_0_signal_out;
+  wire [15:0]demodulation_AM_0_am_demod_data;
   wire [14:0]processing_system7_0_DDR_ADDR;
   wire [2:0]processing_system7_0_DDR_BA;
   wire processing_system7_0_DDR_CAS_N;
@@ -171,11 +181,21 @@ module design_1
   wire ps7_0_axi_periph_M01_AXI_WVALID;
   wire [0:0]rst_ps7_0_100M_peripheral_aresetn;
 
+  assign DAC_out_0[13:0] = AD9744_0_DAC_out;
   assign adc_data_0_1 = adc_data_0[11:0];
   assign clkn_0 = ADC_LTC2220_driver_0_clkn;
+  assign clkn_1 = AD9744_0_clkn;
   assign clkp_0 = ADC_LTC2220_driver_0_clkp;
+  assign clkp_1 = AD9744_0_clkp;
   assign conv_done_0 = ADC_LTC2220_driver_0_conv_done;
   assign signal_out_0 = demoduation_2PSK_0_signal_out;
+  design_1_AD9744_0_0 AD9744_0
+       (.DAC_out(AD9744_0_DAC_out),
+        .clkn(AD9744_0_clkn),
+        .clkp(AD9744_0_clkp),
+        .data_in(demodulation_AM_0_am_demod_data),
+        .sys_clk(processing_system7_0_FCLK_CLK0),
+        .sys_rst_n(rst_ps7_0_100M_peripheral_aresetn));
   design_1_ADC_LTC2220_driver_0_0 ADC_LTC2220_driver_0
        (.DATA(ADC_LTC2220_driver_0_DATA),
         .adc_data(adc_data_0_1),
@@ -238,6 +258,12 @@ module design_1
         .signal_in(ADC_LTC2220_driver_0_DATA),
         .signal_in_mult_1(demoduation_2PSK_0_signal_in_mult_1),
         .signal_out(demoduation_2PSK_0_signal_out));
+  design_1_demodulation_AM_0_0 demodulation_AM_0
+       (.am_demod_data(demodulation_AM_0_am_demod_data),
+        .am_mod_data(ADC_LTC2220_driver_0_DATA),
+        .clk_100m(processing_system7_0_FCLK_CLK0),
+        .en(axi_gpio_0_gpio2_io_o),
+        .resetn(rst_ps7_0_100M_peripheral_aresetn));
   design_1_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),

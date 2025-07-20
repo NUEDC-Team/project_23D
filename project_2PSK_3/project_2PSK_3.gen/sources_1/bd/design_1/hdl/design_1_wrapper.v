@@ -1,8 +1,8 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Sun Jul 20 13:08:32 2025
-//Host        : LAPTOP-U2S933NI running 64-bit major release  (build 9200)
+//Date        : Sun Jul 20 15:49:02 2025
+//Host        : ChaelChael running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist
@@ -10,7 +10,8 @@
 `timescale 1 ps / 1 ps
 
 module design_1_wrapper
-   (DDR_addr,
+   (DAC_out_0,
+    DDR_addr,
     DDR_ba,
     DDR_cas_n,
     DDR_ck_n,
@@ -33,9 +34,12 @@ module design_1_wrapper
     FIXED_IO_ps_srstb,
     adc_data_0,
     clkn_0,
+    clkn_1,
     clkp_0,
+    clkp_1,
     conv_done_0,
     signal_out_0);
+  output [13:0]DAC_out_0;
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -59,10 +63,13 @@ module design_1_wrapper
   inout FIXED_IO_ps_srstb;
   input [11:0]adc_data_0;
   output clkn_0;
+  output clkn_1;
   output clkp_0;
+  output clkp_1;
   output conv_done_0;
   output signal_out_0;
 
+  wire [13:0]DAC_out_0;
   wire [14:0]DDR_addr;
   wire [2:0]DDR_ba;
   wire DDR_cas_n;
@@ -86,12 +93,15 @@ module design_1_wrapper
   wire FIXED_IO_ps_srstb;
   wire [11:0]adc_data_0;
   wire clkn_0;
+  wire clkn_1;
   wire clkp_0;
+  wire clkp_1;
   wire conv_done_0;
   wire signal_out_0;
 
   design_1 design_1_i
-       (.DDR_addr(DDR_addr),
+       (.DAC_out_0(DAC_out_0),
+        .DDR_addr(DDR_addr),
         .DDR_ba(DDR_ba),
         .DDR_cas_n(DDR_cas_n),
         .DDR_ck_n(DDR_ck_n),
@@ -114,7 +124,9 @@ module design_1_wrapper
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .adc_data_0(adc_data_0),
         .clkn_0(clkn_0),
+        .clkn_1(clkn_1),
         .clkp_0(clkp_0),
+        .clkp_1(clkp_1),
         .conv_done_0(conv_done_0),
         .signal_out_0(signal_out_0));
 endmodule

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jul 20 13:08:33 2025" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jul 20 15:49:02 2025" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -134,6 +134,21 @@
         <CONNECTION INSTANCE="ADC_LTC2220_driver_0" PORT="conv_done"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="O" LEFT="13" NAME="DAC_out_0" RIGHT="0" SIGIS="undef" SIGNAME="AD9744_0_DAC_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD9744_0" PORT="DAC_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="clkn_1" SIGIS="undef" SIGNAME="AD9744_0_clkn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD9744_0" PORT="clkn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="clkp_1" SIGIS="undef" SIGNAME="AD9744_0_clkp">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD9744_0" PORT="clkp"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -184,6 +199,46 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/AD9744_0" HWVERSION="1.0" INSTANCE="AD9744_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AD9744" VLNV="xilinx.com:module_ref:AD9744:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_AD9744_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="sys_clk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sys_rst_n" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="demodulation_AM_0_am_demod_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="demodulation_AM_0" PORT="am_demod_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="13" NAME="DAC_out" RIGHT="0" SIGIS="undef" SIGNAME="AD9744_0_DAC_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DAC_out_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clkp" SIGIS="undef" SIGNAME="AD9744_0_clkp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clkp_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clkn" SIGIS="undef" SIGNAME="AD9744_0_clkn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clkn_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
     <MODULE COREREVISION="1" FULLNAME="/ADC_LTC2220_driver_0" HWVERSION="1.0" INSTANCE="ADC_LTC2220_driver_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ADC_LTC2220_driver" VLNV="xilinx.com:module_ref:ADC_LTC2220_driver:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -219,6 +274,7 @@
         <PORT DIR="O" LEFT="15" NAME="DATA" RIGHT="0" SIGIS="undef" SIGNAME="ADC_LTC2220_driver_0_DATA">
           <CONNECTIONS>
             <CONNECTION INSTANCE="demoduation_2PSK_0" PORT="signal_in"/>
+            <CONNECTION INSTANCE="demodulation_AM_0" PORT="am_mod_data"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="clkp" SIGIS="undef" SIGNAME="ADC_LTC2220_driver_0_clkp">
@@ -538,6 +594,7 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="demoduation_2PSK_0" PORT="en"/>
             <CONNECTION INSTANCE="ADC_LTC2220_driver_0" PORT="en"/>
+            <CONNECTION INSTANCE="demodulation_AM_0" PORT="en"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1016,6 +1073,42 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="15" NAME="DAC_out" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/demodulation_AM_0" HWVERSION="1.0" INSTANCE="demodulation_AM_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="demodulation_AM" VLNV="xilinx.com:module_ref:demodulation_AM:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_demodulation_AM_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="resetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_100m" SIGIS="undef" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="axi_gpio_0_gpio2_io_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_gpio_0" PORT="gpio2_io_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="am_mod_data" RIGHT="0" SIGIS="undef" SIGNAME="ADC_LTC2220_driver_0_DATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ADC_LTC2220_driver_0" PORT="DATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="am_demod_data" RIGHT="0" SIGIS="undef" SIGNAME="demodulation_AM_0_am_demod_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AD9744_0" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="freq" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -2170,6 +2263,8 @@
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M01_ACLK"/>
             <CONNECTION INSTANCE="demoduation_2PSK_0" PORT="clk_system"/>
             <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="AD9744_0" PORT="sys_clk"/>
+            <CONNECTION INSTANCE="demodulation_AM_0" PORT="clk_100m"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -3283,6 +3378,8 @@
             <CONNECTION INSTANCE="demoduation_2PSK_0" PORT="reset"/>
             <CONNECTION INSTANCE="ADC_LTC2220_driver_0" PORT="rst_n"/>
             <CONNECTION INSTANCE="axi_gpio_1" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="AD9744_0" PORT="sys_rst_n"/>
+            <CONNECTION INSTANCE="demodulation_AM_0" PORT="resetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

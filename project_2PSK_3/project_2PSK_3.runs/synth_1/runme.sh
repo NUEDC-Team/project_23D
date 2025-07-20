@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Apps/Xilinx/Vitis/2022.2/bin;D:/Apps/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;D:/Apps/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64:D:/Apps/Xilinx/Vivado/2022.2/bin
+  PATH=D:/Coding/Vivado/Xilinx/Vitis/2022.2/bin;D:/Coding/Vivado/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;D:/Coding/Vivado/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64:D:/Coding/Vivado/Xilinx/Vivado/2022.2/bin
 else
-  PATH=D:/Apps/Xilinx/Vitis/2022.2/bin;D:/Apps/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;D:/Apps/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64:D:/Apps/Xilinx/Vivado/2022.2/bin:$PATH
+  PATH=D:/Coding/Vivado/Xilinx/Vitis/2022.2/bin;D:/Coding/Vivado/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;D:/Coding/Vivado/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64:D:/Coding/Vivado/Xilinx/Vivado/2022.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Electrical engineering base/ZYNQ/project/project_2PSK_3/project_2PSK_3.runs/synth_1'
+HD_PWD='D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
