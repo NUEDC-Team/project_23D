@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sun Jul 20 16:07:12 2025
-# Process ID: 26760
+# Start of session at: Sun Jul 20 16:23:49 2025
+# Process ID: 21144
 # Current directory: D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/design_1_wrapper.vds
@@ -26,31 +26,31 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 32720
+INFO: [Synth 8-7075] Helper process launched with PID 20112
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Coding/Vivado/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1248.488 ; gain = 408.051
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1248.309 ; gain = 408.836
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1_AD9744_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_AD9744_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_AD9744_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_AD9744_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ADC_LTC2220_driver_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_ADC_LTC2220_driver_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ADC_LTC2220_driver_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_ADC_LTC2220_driver_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_axi_gpio_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_axi_gpio_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_demoduation_2PSK_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_demoduation_2PSK_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_demoduation_2PSK_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_demoduation_2PSK_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_AD9744_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_AD9744_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_AD9744_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_AD9744_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ADC_LTC2220_driver_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_ADC_LTC2220_driver_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ADC_LTC2220_driver_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_ADC_LTC2220_driver_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_1_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_1_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_demoduation_2PSK_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_demoduation_2PSK_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_demoduation_2PSK_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_demoduation_2PSK_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'DAC_out' of module 'design_1_demoduation_2PSK_0_0' is unconnected for instance 'demoduation_2PSK_0' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:253]
 WARNING: [Synth 8-7023] instance 'demoduation_2PSK_0' of module 'design_1_demoduation_2PSK_0_0' has 8 connections declared, but only 7 given [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:253]
-INFO: [Synth 8-6157] synthesizing module 'design_1_demodulation_AM_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_demodulation_AM_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_demodulation_AM_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_demodulation_AM_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_demodulation_AM_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_demodulation_AM_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_demodulation_AM_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_demodulation_AM_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'freq' of module 'design_1_demodulation_AM_0_0' is unconnected for instance 'demodulation_AM_0' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:261]
 WARNING: [Synth 8-7023] instance 'demodulation_AM_0' of module 'design_1_demodulation_AM_0_0' has 6 connections declared, but only 5 given [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:261]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_processing_system7_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_processing_system7_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_processing_system7_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_processing_system7_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'UART0_TX' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:267]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 64 connections declared, but only 63 given [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:267]
 INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:421]
@@ -59,17 +59,17 @@ INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (0#1) [
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:1098]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (0#1) [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:1098]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:1230]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_auto_pc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_auto_pc_0_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:1230]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_xbar_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:925]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_0' is unconnected for instance 'xbar' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:925]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:925]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:421]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_rst_ps7_0_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-26760-ChaelChael/realtime/design_1_rst_ps7_0_100M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_rst_ps7_0_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/.Xil/Vivado-21144-ChaelChael/realtime/design_1_rst_ps7_0_100M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:412]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:412]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/synth/design_1.v:412]
@@ -94,18 +94,18 @@ WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps7_0_axi_periph_0 i
 WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1344.555 ; gain = 504.117
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1342.973 ; gain = 503.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1344.555 ; gain = 504.117
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1342.973 ; gain = 503.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1344.555 ; gain = 504.117
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1342.973 ; gain = 503.500
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1344.555 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1342.973 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -131,39 +131,30 @@ Finished Parsing XDC File [d:/Coding/Vivado/project/project_23H/project_2PSK_3/p
 Parsing XDC File [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_demodulation_AM_0_0/design_1_demodulation_AM_0_0/design_1_demodulation_AM_0_0_in_context.xdc] for cell 'design_1_i/demodulation_AM_0'
 Finished Parsing XDC File [d:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.gen/sources_1/bd/design_1/ip/design_1_demodulation_AM_0_0/design_1_demodulation_AM_0_0/design_1_demodulation_AM_0_0_in_context.xdc] for cell 'design_1_i/demodulation_AM_0'
 Parsing XDC File [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc]
-WARNING: [Vivado 12-584] No ports matched 'UART0_RX_0'. [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc:1]
-WARNING: [Vivado 12-584] No ports matched 'UART0_TX_0'. [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc:2]
-WARNING: [Vivado 12-584] No ports matched 'UART0_TX_0'. [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc:33]
-WARNING: [Vivado 12-584] No ports matched 'UART0_RX_0'. [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc:34]
-WARNING: [Vivado 12-584] No ports matched 'clk_n_0'. [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc:39]
-WARNING: [Vivado 12-584] No ports matched 'clk_p_0'. [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc:40]
-WARNING: [Vivado 12-584] No ports matched 'clk_p_0'. [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc:41]
-WARNING: [Vivado 12-584] No ports matched 'clk_n_0'. [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc:42]
 Finished Parsing XDC File [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.srcs/constrs_1/new/system_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1363.008 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1366.582 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1363.008 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1366.582 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Coding/Vivado/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1363.008 ; gain = 522.570
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1363.008 ; gain = 522.570
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -441,10 +432,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_1. (constrain
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/AD9744_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/demodulation_AM_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1363.008 ; gain = 522.570
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1363.008 ; gain = 522.570
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -473,25 +464,25 @@ WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_ps7_0_axi_periph_0 i
 WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1363.008 ; gain = 522.570
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1363.008 ; gain = 522.570
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1363.008 ; gain = 522.570
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1363.008 ; gain = 522.570
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -509,37 +500,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1367.727 ; gain = 527.289
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1367.727 ; gain = 527.289
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1367.727 ; gain = 527.289
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1367.727 ; gain = 527.289
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1367.727 ; gain = 527.289
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1367.727 ; gain = 527.289
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -579,24 +570,24 @@ Report Cell Usage:
 |12    |OBUF                          |    20|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1367.727 ; gain = 527.289
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1366.582 ; gain = 527.109
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1367.727 ; gain = 508.836
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1367.727 ; gain = 527.289
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1366.582 ; gain = 503.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1366.582 ; gain = 527.109
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1379.766 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1374.707 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1387.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1380.293 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete, checksum: 4c6bf0d2
 INFO: [Common 17-83] Releasing license: Synthesis
-56 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+56 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1387.344 ; gain = 958.578
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1380.293 ; gain = 951.781
 INFO: [Common 17-1381] The checkpoint 'D:/Coding/Vivado/project/project_23H/project_2PSK_3/project_2PSK_3.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jul 20 16:07:42 2025...
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 20 16:24:18 2025...
